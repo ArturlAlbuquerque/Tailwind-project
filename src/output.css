@@ -664,8 +664,16 @@ video {
   max-width: 640px;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -690,6 +698,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .divide-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -727,6 +739,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .bg-verde-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(145 238 119 / var(--tw-bg-opacity, 1));
@@ -752,6 +768,10 @@ video {
   background-color: rgb(3 5 4 / var(--tw-bg-opacity, 1));
 }
 
+.bg-verde-950\/60 {
+  background-color: rgb(3 5 4 / 0.6);
+}
+
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -775,6 +795,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -818,6 +842,10 @@ video {
   padding-top: 16rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .align-bottom {
   vertical-align: bottom;
 }
@@ -843,6 +871,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .uppercase {
@@ -892,6 +925,74 @@ video {
 
 .hover\:no-underline:hover {
   text-decoration-line: none;
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:inline-flex {
+    display: inline-flex;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:gap-8 {
+    gap: 2rem;
+  }
+
+  .sm\:rounded-full {
+    border-radius: 9999px;
+  }
+
+  .sm\:bg-verde-950 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 5 4 / var(--tw-bg-opacity, 1));
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .sm\:pt-64 {
+    padding-top: 16rem;
+  }
+
+  .sm\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .sm\:pr-1 {
+    padding-right: 0.25rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
