@@ -24,14 +24,31 @@
     <a href="./">
       <img src="img/forest.svg" alt="Forest">
     </a>
-    <nav>
-      <ul class="flex flex-wrap text-white text-xl gap-8 [&_a:hover]:underline [&_a:hover]:underline-offset-8">
-        <li><a href="#acomodacoes">Acomodações</a></li>
-        <li><a href="#eventos">Eventos</a></li>
-        <li><a href="#experiencias">Experiências</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <nav id="mobile-menu" class="lg:block hidden items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
+      <div class="fixed lg:hidden inset-0 bg-verde-950/40 backdrop-blur-md"></div>
+      <ul class="text-white text-2xl max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full lg:text-xl lg:flex lg:flex-wrap lg:gap-8">
+        <li class="animate-slide-in opacity-0 animate-1">
+          <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8" href="#acomodacoes">Acomodações</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-2">
+          <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8" href="#eventos">Eventos</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-3">
+          <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8" href="#experiencias">Experiências</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-4">
+          <a class="p-4 lg:px-0 lg:py-2 block max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8" href="#contato">Contato</a>
+        </li>
       </ul>
     </nav>
+    <button id="mobile-button" class="btn flex items-center gap-3 text-verde-900 py-1 rounded-full lg:hidden">
+      Menu
+      <span class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-verde-800">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
   </header>
   <main class="container">
     <div class="relative px-4 sm:px-8 pb-8 pt-12 sm:pt-64 bg-gradient-to-t from-verde-950/80 text-white rounded-2xl overflow-hidden">
