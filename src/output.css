@@ -702,16 +702,20 @@ video {
   height: 0.125rem;
 }
 
-.h-52 {
-  height: 13rem;
-}
-
 .h-3 {
   height: 0.75rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .w-28 {
   width: 7rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-6 {
@@ -720,10 +724,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .max-w-screen-md {
@@ -752,6 +752,20 @@ video {
 
 .animate-slide-in {
   animation: slideIn .4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn .4s ease-in-out forwards;
 }
 
 .cursor-pointer {
@@ -790,10 +804,6 @@ video {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
 .content-end {
   align-content: flex-end;
 }
@@ -822,8 +832,16 @@ video {
   gap: 0.25rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -832,14 +850,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -936,12 +946,12 @@ video {
   background-color: rgb(15 28 21 / var(--tw-bg-opacity, 1));
 }
 
-.bg-verde-950\/60 {
-  background-color: rgb(3 5 4 / 0.6);
-}
-
 .bg-verde-950\/40 {
   background-color: rgb(3 5 4 / 0.4);
+}
+
+.bg-verde-950\/60 {
+  background-color: rgb(3 5 4 / 0.6);
 }
 
 .bg-\[url\(\'\.\/img\/padrao\.svg\'\)\] {
@@ -996,6 +1006,11 @@ video {
   padding-right: 1rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1014,11 +1029,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pb-4 {
@@ -1449,12 +1459,12 @@ video {
     background-color: rgb(3 5 4 / var(--tw-bg-opacity, 1));
   }
 
-  .sm\:p-8 {
-    padding: 2rem;
-  }
-
   .sm\:p-12 {
     padding: 3rem;
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
   }
 
   .sm\:px-8 {
@@ -1590,12 +1600,4 @@ video {
   .lg\:hover\:underline-offset-8:hover {
     text-underline-offset: 8px;
   }
-}
-
-.\[\&_a\:hover\]\:underline a:hover {
-  text-decoration-line: underline;
-}
-
-.\[\&_a\:hover\]\:underline-offset-8 a:hover {
-  text-underline-offset: 8px;
 }
